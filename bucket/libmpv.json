@@ -3,6 +3,9 @@
     "description": "A library for media players (libmpv). Allows embedding mpv functionality into other applications.",
     "homepage": "https://mpv.io/",
     "license": "LGPL-2.1-or-later",
+    "depends": [
+        "7zip"
+    ],
     "notes": [
         "Scoop has automatically added the 'bin', 'lib', and 'include' folders to your paths.",
         "To use in your C/C++ project, just link against mpv."
@@ -11,7 +14,6 @@
         "64bit": {
             "url": "https://sourceforge.net/projects/mpv-player-windows/files/libmpv/mpv-dev-x86_64-v3-20260809-git-dd5d17d328.7z/download",
             "hash": "sha256:5717857eeb755071dfda009a631402320eadd2ee766d723a22eb8bfc2b52a01a",
-            "extract_dir": "mpv-dev-x86_64-v3-20260809-git-dd5d17d328"
         }
     },
     "checkver": {
@@ -21,8 +23,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://sourceforge.net/projects/mpv-player-windows/files/libmpv/mpv-dev-x86_64-$version.7z/download",
-                "extract_dir": "mpv-dev-x86_64-$version"
+                "url": "https://sourceforge.net/projects/mpv-player-windows/files/libmpv/mpv-dev-x86_64-$version.7z/download"
             }
         }
     }
